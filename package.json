@@ -1,0 +1,53 @@
+{
+  "name": "@softland/bonus_engine",
+  "version": "1.0.19",
+  "files": [
+    "build/"
+  ],
+  "scripts": {
+    "start": "softland start",
+    "prebuild": "npm ci",
+    "build": "softland build",
+    "serve": "softland serve",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@emotion/react": "~11.11.4",
+    "@emotion/styled": "~11.11.5",
+    "@mui/icons-material": "~5.15.18",
+    "@mui/material": "~5.15.18",
+    "@softland/admin-internationalization": "^1.0.1",
+    "@softland/contexts": "~2.1.0",
+    "@softland/design-system": "~2.5.1",
+    "@softland/forms": "~2.1.0",
+    "@softland/mfe-loader": "~3.3.1",
+    "@softland/utils": "~2.1.0",
+    "@softland/x-premium": "~2.1.0",
+    "@tanstack/react-query": "~4.20.4",
+    "axios": "~1.2.1",
+    "dayjs": "~1.11.9",
+    "notistack": "~2.0.8",
+    "qs": "~6.11.0",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "react-router-dom": "~6.4.3"
+  },
+  "devDependencies": {
+    "@softland/browserslist-config": "~1.0.1",
+    "@softland/cli": "~2.5.0",
+    "@softland/eslint-config": "~1.2.0",
+    "@softland/tsconfig": "~1.1.1",
+    "@testing-library/jest-dom": "~5.16.5",
+    "@testing-library/react": "~13.4.0",
+    "@testing-library/user-event": "~13.5.0",
+    "@types/jest": "~27.5.2",
+    "@types/node": "~16.18.8",
+    "@types/qs": "~6.9.15",
+    "@types/react": "~18.2.22",
+    "@types/react-dom": "~18.2.22",
+    "eslint": "~8.32.0",
+    "prettier": "~2.8.8",
+    "typescript": "~4.9.5",
+    "web-vitals": "~2.1.4"
+  }
+}

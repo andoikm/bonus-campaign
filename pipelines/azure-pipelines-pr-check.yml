@@ -1,0 +1,26 @@
+# File: azure-pipelines.yml
+name: $(Build.BuildId)_$(Build.DefinitionName)_$(Build.SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+resources:
+  repositories:
+    - repository: self
+      type: git
+      ref: $(Build.SourceBranch)
+    - repository: Infrastructure
+      type: git
+      name: Infrastructure/Infrastructure
+      ref: main
+
+trigger:
+  branches:
+    include:
+      - development
+      - staging
+      - prod
+
+pr:
+  branches:
+    exclude:
+      - "*"
+
+extends:
+  template: CICD/azure-pipeline-frontend-pr-check.yml@Infrastructure

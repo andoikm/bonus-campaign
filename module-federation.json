@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/@softland/mfe-loader/federation-config/reference.json",
+  "extends": "@softland/mfe-loader/federation-config/backoffice-base",
+  "exposes": {
+    "./mfe": "./src/App"
+  }
+}
